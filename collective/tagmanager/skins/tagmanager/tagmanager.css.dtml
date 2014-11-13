@@ -1,0 +1,106 @@
+/*
+  <dtml-with tagmanager_properties> (do not remove this)
+  <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either)
+*/
+
+/* YOUR CSS RULES START HERE */
+
+#archetypes-fieldname-subject.field {
+    margin: 0 0 1em 0;
+}
+
+#tag-button-container {
+    float: none;
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+} 
+
+div#tag-button-container .category-container {
+    float: left;
+    width: 30%;
+    margin: 0 1.5%;
+}
+
+ul.tagmanager {
+    margin-left: 0.25em;
+}
+
+ul.tagmanager li input[type="button"].tagbutton {
+    width: 100%;
+    display: block;
+    border: 1px solid &dtml-buttonBorder;;
+    background-color: &dtml-buttonBackground;;
+	color: &dtml-buttonText; !important;
+    margin-top: 3px;
+    padding: 0.25em;
+	font-size: 0.88em;
+	text-align: left;
+	text-decoration: none;
+	cursor: pointer;
+	background-image: none;
+	border-radius: 3px;
+	white-space: normal;
+}
+
+ul.tagmanager li.hastags [type="button"].tagbutton {
+    background-color: &dtml-hasTagsButtonBackground;;
+    border: 1px solid &dtml-hasTagsButtonBorder;;
+    color: &dtml-hasTagsButtonText; !important;
+}
+
+ul.tagmanager li input.tagbutton:hover {
+    background-color: &dtml-buttonHoverBackground;;
+    border: 1px solid &dtml-buttonHoverBorder;;
+    color: &dtml-buttonHoverText; !important;
+}
+
+ul.tagmanager li.hastags [type="button"].tagbutton {
+    background-color: &dtml-hasTagsButtonHoverBackground;;
+    border: 1px solid &dtml-hasTagsButtonHoverBorder;;
+    color: &dtml-hasTagsButtonHoverText; !important;
+}
+
+ul.tagmanager li {
+    list-style-image:none;
+    list-style-type:none;
+}
+
+.tag_container {
+	float: left;
+	display: block;
+    margin-left: 2em;
+    margin-right: 2em;
+    white-space: nowrap;
+}
+
+.tag_container div {
+    margin-bottom: 0.375em;
+}
+
+.tag_container input {
+	margin-right: 4px;
+}
+
+.tagmanager .overlay {
+    width: 80%;
+    background: #FFFFFF;
+    border: 1px solid black;
+}
+
+.tag_buttons {
+    clear: both;
+}
+
+.tag_buttons input[type="button"] {
+    margin: 8px 8px 8px 0;
+}
+
+#tagToggle {
+    clear: both;
+    display: block;
+}
+
+/* YOUR CSS RULES STOP HERE */
+/* </dtml-with> */
